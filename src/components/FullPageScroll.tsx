@@ -9,6 +9,7 @@ import FullPage, {
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa";
+import { BiDownArrow } from "react-icons/bi";
 
 import BlockchainWorldImg from "../images/blockchain-world.png";
 import DeepSeaImg from "../images/deep-sea.png";
@@ -42,12 +43,19 @@ const FullPageScroll = () => {
                 and I want to change this using Web3 technology, so I am
                 currently learning Solidity.
               </p>
+              <div
+                className="my-5"
+              >
+                <BiDownArrow fontSize={36} className="block mx-auto" />
+              </div>
             </motion.div>
           </>
         </FullpageSection>
+
         <FullpageSection className="h-screen w-full flex justify-center items-center -z-50">
           <Timeline />
         </FullpageSection>
+
         <FullpageSection className="h-screen w-full flex justify-center -z-50">
           <div className="text-center">
             <h3 className="max-h-fit mt-[150px] font-bold text-4xl text-center">

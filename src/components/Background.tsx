@@ -42,21 +42,19 @@ const Background = () => {
       ),
     ];
 
-    if (x >= 99 || x <= 1) {
-      xs = 0;
+    if (x >= 99) {
+      p5.noLoop();
     }
 
-    for (let i = 0; i < 30; i++) {
+    for (let i = 0; i < 25; i++) {
+      const quad = quads[i];
       let newQuad = new Quad(
-        quads[i].l1.getInteriorPoint(m, n)!,
-        quads[i].l2.getInteriorPoint(m, n)!,
-        quads[i].l3.getInteriorPoint(m, n)!,
-        quads[i].l4.getInteriorPoint(m, n)!
+        quad.l1.getInteriorPoint(m, n)!,
+        quad.l2.getInteriorPoint(m, n)!,
+        quad.l3.getInteriorPoint(m, n)!,
+        quad.l4.getInteriorPoint(m, n)!
       );
       quads.push(newQuad);
-    }
-
-    for (let quad of quads) {
       quad.draw(p5);
     }
   };
@@ -67,7 +65,7 @@ const Background = () => {
 
   return (
     <Sketch
-      className="fixed top-0 left-0 -z-50 "
+      className="fixed top-0 left-0 -z-50"
       setup={setup}
       draw={draw}
       windowResized={windowResized}
