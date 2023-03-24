@@ -8,6 +8,12 @@ import FullPage, {
 } from "@ap.cx/react-fullpage";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { FaArrowRight } from "react-icons/fa";
+
+import BlockchainWorldImg from "../images/blockchain-world.png";
+import DeepSeaImg from "../images/deep-sea.png";
+import ProfileImg from "../images/profile.webp";
+import SoundVisualization from "../images/sound-visualization.png";
 
 const FullPageScroll = () => {
   return (
@@ -24,8 +30,8 @@ const FullPageScroll = () => {
             >
               <img
                 className="mask mask-circle mx-auto mt-48 mb-5"
-                src="/public/profile.webp"
-                alt=""
+                src={ProfileImg}
+                alt="GatoLifeIcon"
               />
               <h3 className="font-bold text-4xl">GatoLife</h3>
               <p className="mt-5">
@@ -49,19 +55,19 @@ const FullPageScroll = () => {
             </h3>
             <div className="grid grid-cols-3 gap-4 mt-20 text-left">
               <Card
-                src="/public/blockchain-world.png"
+                src={BlockchainWorldImg}
                 title="Blockchain World"
                 description="A beginner-friendly introduction to blockchain. Received the MIC Award at the 25th National Jr/Sr HS Web Contest."
                 link="https://contest.japias.jp/tqj25/250150K/"
               />
               <Card
-                src="/public/sound-visualization.png"
+                src={SoundVisualization}
                 title="Sound Visualizer"
                 description="A simple sound visualizer using p5.js."
                 link="https://gatolife-creator.github.io/sound_visualization/"
               />
               <Card
-                src="/public/deep-sea.png"
+                src={DeepSeaImg}
                 title="Deep Sea"
                 description="Invites you on a journey to the deep sea using p5.js."
                 link="https://gatolife-creator.github.io/deep-sea/"
@@ -69,9 +75,9 @@ const FullPageScroll = () => {
             </div>
             <Link
               to="/works"
-              className="btn btn-lg btn-secondary text-center mt-10"
+              className="btn btn-lg btn-secondary gap-2 text-center mt-10"
             >
-              See More
+              See More <FaArrowRight fontSize={16} />
             </Link>
           </div>
         </FullpageSection>

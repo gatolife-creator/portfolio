@@ -13,7 +13,7 @@ const Background = () => {
   let m: number;
   let n: number;
 
-  const setup = (p5: any, canvasParentsRef) => {
+  const setup = (p5: any, canvasParentsRef: any) => {
     p5.createCanvas(window.innerWidth, window.innerHeight).parent(
       canvasParentsRef
     );
