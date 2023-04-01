@@ -52,7 +52,7 @@ const FullPageScroll = () => {
           </>
         </FullpageSection>
 
-        <FullpageSection className="h-screen w-full flex justify-center items-center -z-50">
+        <FullpageSection className="relative h-screen w-full flex justify-center items-center -z-50">
           <Timeline />
         </FullpageSection>
 
