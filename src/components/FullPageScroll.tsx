@@ -13,6 +13,7 @@ import { BiDownArrow } from "react-icons/bi";
 
 import BlockchainWorldImg from "../images/blockchain-world.png";
 import DeepSeaImg from "../images/deep-sea.png";
+import ChatAppImg from "../images/chat-app.png";
 import ProfileImg from "../images/profile.webp";
 import SoundVisualization from "../images/sound-visualization.png";
 
@@ -43,9 +44,7 @@ const FullPageScroll = () => {
                 and I want to change this using Web3 technology, so I am
                 currently learning Solidity.
               </p>
-              <div
-                className="my-5"
-              >
+              <div className="my-5">
                 <BiDownArrow fontSize={36} className="block mx-auto" />
               </div>
             </motion.div>
@@ -75,10 +74,10 @@ const FullPageScroll = () => {
                 link="https://gatolife-creator.github.io/sound_visualization/"
               />
               <Card
-                src={DeepSeaImg}
-                title="Deep Sea"
-                description="Invites you on a journey to the deep sea using p5.js."
-                link="https://gatolife-creator.github.io/deep-sea/"
+                src={ChatAppImg}
+                title="Decentralized Chat App"
+                description="My first dApp I created. "
+                link="https://dapp-chat-kg28uyqvp-gatolife-creator.vercel.app/"
               />
             </div>
             <Link

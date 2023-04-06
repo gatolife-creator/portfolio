@@ -5,6 +5,7 @@ import Main from "../components/Main";
 import TransitionAnimation from "../components/TransitionAnimation";
 
 import BlockchainWorldImg from "../images/blockchain-world.png";
+import ChatAppImg from "../images/chat-app.png";
 import DeepSeaImg from "../images/deep-sea.png";
 import SoundVisualization from "../images/sound-visualization.png";
 
@@ -32,6 +33,13 @@ const Works = () => {
               title="Sound Visualizer"
               description="A simple sound visualizer using p5.js."
               link="https://gatolife-creator.github.io/sound_visualization/"
+              className="mx-auto"
+            />
+            <Card
+              src={ChatAppImg}
+              title="Decentralized Chat App"
+              description="My first dApp I created. "
+              link="https://dapp-chat-kg28uyqvp-gatolife-creator.vercel.app/"
               className="mx-auto"
             />
             <Card

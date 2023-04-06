@@ -15,7 +15,7 @@ const Card = ({
 }) => {
   return (
     <motion.a
-      className={`card w-96 h-60 bg-base-100 shadow-xl image-full ${
+      className={`card w-96 h-60 bg-base-100 shadow-xl image-full my-4 ${
         className && className
       }`}
       href={link}
