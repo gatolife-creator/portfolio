@@ -39,7 +39,7 @@ const Works = () => {
               src={ChatAppImg}
               title="Decentralized Chat App"
               description="My first dApp I created. "
-              link="https://dapp-chat-kg28uyqvp-gatolife-creator.vercel.app/"
+              link="https://dapp-chat-six.vercel.app/"
               className="mx-auto"
             />
             <Card
