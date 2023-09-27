@@ -1,4 +1,3 @@
-import p5 from "p5";
 import Sketch from "react-p5";
 import { Point, Quad } from "../react-shapeshape";
 
@@ -22,16 +21,18 @@ const Background = () => {
 
   const draw = (p5: any) => {
     p5.background("#2D1B69");
-    r = Math.min(window.innerWidth * 2, window.innerHeight * 2) / 2;
-    p5.translate(p5.width / 2, p5.height / 2);
+    r = Math.min(window.innerWidth, window.innerHeight);
+    p5.translate(window.innerWidth / 2, window.innerHeight / 2);
 
     p5.noFill();
     p5.strokeWeight(2);
     p5.stroke("white");
 
-    x += xs;
-    m = 100 - x;
-    n = x;
+    if (x < 98.5) {
+      x += xs;
+      m = 100 - x;
+      n = x;
+    }
 
     quads = [
       new Quad(
@@ -42,11 +43,7 @@ const Background = () => {
       ),
     ];
 
-    if (x >= 99) {
-      p5.noLoop();
-    }
-
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 15; i++) {
       const quad = quads[i];
       let newQuad = new Quad(
         quad.l1.getInteriorPoint(m, n)!,
