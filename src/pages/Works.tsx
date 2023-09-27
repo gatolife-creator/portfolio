@@ -15,7 +15,7 @@ const Works = () => {
       <Background />
       <Main>
         <motion.div
-          initial={{ scale: 0 }}
+          initial={{ scale: 0.5 }}
           animate={{ scale: 1 }}
           transition={{ stiffness: 260, damping: 20, duration: 0.6 }}
         >

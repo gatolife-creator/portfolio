@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <nav className="fixed navbar bg-white/4 backdrop-blur-sm z-[9999] sm:h-[100px] h-[60px]">
       <div className="flex-1">
-        <Link to="/" className="btn btn-lg btn-ghost normal-case text-3xl">
+        <Link to="/" className="btn btn-lg btn-ghost normal-case sm:text-3xl text-2xl">
           GatoLife
         </Link>
       </div>
